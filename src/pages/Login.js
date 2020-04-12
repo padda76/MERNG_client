@@ -25,17 +25,6 @@ const Login = (props) => {
         variables: values
     })
 
-    // const [loginUser, {loading}={}] = useMutation(LOGIN_USER, {
-    //     update(_, result){
-    //         context.login(result.data.login)
-    //         props.history.push('/');
-    //     },
-    //     onError(err){
-    //         setErrors(err.graphQLErrors[0].extensions.errors);
-    //     },
-    //     variables: values
-    // })
-
     function loginUserCallback(){
         loginUser();
     }
